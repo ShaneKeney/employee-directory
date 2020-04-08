@@ -1,0 +1,24 @@
+.header {
+    background-color: #001055;
+    height: 150px;
+
+    border-color: rgb(131, 0, 0);
+    border-style: none none solid none;
+    border-bottom-width: 8px;
+
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    color: white;
+}
+
+.title {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: .8em;
+}

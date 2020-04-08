@@ -1,0 +1,20 @@
+.section-container {
+    margin-top: 40px;
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(216, 216, 216);
+}
+
+.section {
+    color: black;
+    font-weight: bold;
+    font-size: .8em;
+}
+
