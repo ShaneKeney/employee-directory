@@ -4,8 +4,7 @@ import './style.css';
 const SearchBar = props => {
 
     const handleInputChange = e => {
-        console.log(e.nativeEvent.target.value)
-
+        props.findByUser(e.nativeEvent.target.value)
     }
 
     return (

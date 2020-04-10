@@ -15,8 +15,27 @@ const GridHeader = props => {
             <div className={'section name'} style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                 <p className='section'>Name</p> 
                 
-                { arrowState && <ArrowDropDownIcon style={{color: orange[500]}} fontSize={'small'}  onClick={() => { setArrowState(!arrowState)}} /> }
-                { !arrowState && <ArrowDropUpIcon style={{color: orange[500]}} fontSize={'small'} onClick={() => { setArrowState(!arrowState)}} />}
+                { arrowState && 
+                    <ArrowDropDownIcon 
+                        style={{color: orange[500]}} 
+                        fontSize={'small'}  
+                        onClick={() => { 
+                            setArrowState(!arrowState)
+                            props.sortUsers(arrowState);
+                        }}
+                    /> 
+                }
+
+                { !arrowState && 
+                    <ArrowDropUpIcon 
+                        style={{color: orange[500]}} 
+                        fontSize={'small'} 
+                        onClick={() => { 
+                            setArrowState(!arrowState)
+                            props.sortUsers(arrowState);
+                        }} 
+                    />
+                }
             </div>
 
             <p className='section place'>Place</p>

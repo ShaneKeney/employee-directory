@@ -8,8 +8,12 @@ const ResultViewer = props => {
 
     return (
         <div className='container'>
-            <SearchBar />
-            <GridHeader />
+            <SearchBar 
+                findByUser={props.findByUser} 
+            />
+            <GridHeader 
+                sortUsers={props.sortUsers}
+            />
             { props.data.map((item, index) => {
                 return (
                     <ListItem 

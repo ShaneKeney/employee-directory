@@ -4,7 +4,6 @@ import './style.css';
 const ListItem = props => {
     const { position, image, email, location, fullname, birthdate } = props;
 
-    console.log(position)
     const style = {
 
     }
