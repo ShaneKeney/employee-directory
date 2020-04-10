@@ -16,5 +16,29 @@
     color: black;
     font-weight: bold;
     font-size: .8em;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    width: 50px;
+}
+
+.name {
+    width: 100px;
+}
+
+.place {
+    width: 125px;
+}
+
+.email {
+    width: 200px;
+}
+
+.dob {
+    width: 75px;
 }
 

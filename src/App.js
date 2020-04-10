@@ -1,22 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import SearchBar from './components/SearchBar';
 import ResultViewer from './components/ResultViewer';
 import loadEmployees from './API/loadEmployees';
 
 const App = () => {
 
+  const [employees, setEmployees] = useState([]);
+
   useEffect(() => {
-    loadEmployees();
+    const loadData = async () => {
+      let results = await loadEmployees();    
+      
+      setEmployees([...results.results])
+    }
+    
+    loadData();
   }, []);
+
+  useEffect(() => {
+    console.log(employees)
+  })
 
   return (
     <div className='App-header'>
-      <Header />
-      <SearchBar />  
-      <ResultViewer />    
+      <Header />  
+      <ResultViewer 
+        data={employees}
+      />
     </div>
 
   );

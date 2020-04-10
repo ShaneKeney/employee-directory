@@ -8,9 +8,8 @@ const loadEmployees = async () => {
     )
 
     let resData = await response.json();
-    console.log(resData);
 
-    return true
+    return resData
 }
 
 export default loadEmployees;

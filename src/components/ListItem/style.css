@@ -1,0 +1,26 @@
+.list-container {
+    margin-top: 5px;
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item {
+    color: black;
+    font-weight: bold;
+    font-size: .8em;
+
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.link {
+    color: rgb(0, 145, 194);
+    text-decoration: underline;
+}

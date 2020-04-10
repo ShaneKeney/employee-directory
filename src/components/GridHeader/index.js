@@ -10,18 +10,18 @@ const GridHeader = props => {
 
     return (
         <div className='section-container'>
-            <p className='section'>Image</p>
+            <p className='section image'>Image</p>
 
-            <div style={{display: 'flex', flexDirection: 'row'}}>
+            <div className={'section name'} style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                 <p className='section'>Name</p> 
                 
-            { arrowState && <ArrowDropDownIcon style={{color: orange[500]}} fontSize={'small'}  onClick={() => { setArrowState(!arrowState)}} /> }
-            { !arrowState && <ArrowDropUpIcon style={{color: orange[500]}} fontSize={'small'} onClick={() => { setArrowState(!arrowState)}} />}
+                { arrowState && <ArrowDropDownIcon style={{color: orange[500]}} fontSize={'small'}  onClick={() => { setArrowState(!arrowState)}} /> }
+                { !arrowState && <ArrowDropUpIcon style={{color: orange[500]}} fontSize={'small'} onClick={() => { setArrowState(!arrowState)}} />}
             </div>
 
-            <p className='section'>Place</p>
-            <p className='section'>Email</p>
-            <p className='section'>DOB</p>
+            <p className='section place'>Place</p>
+            <p className='section email'>Email</p>
+            <p className='section dob'>DOB</p>
         </div>
     )
 }
